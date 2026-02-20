@@ -1,0 +1,198 @@
+/* =====================================================
+   TRICKICE - PAGES CSS
+   Page-specific styles
+   ===================================================== */
+
+/* =====================================================
+   SHOP PAGE
+   ===================================================== */
+.shop-hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 3rem 4rem;
+}
+
+.shop-hero .hero-content {
+    max-width: 1600px;
+    width: 100%;
+    text-align: left;
+}
+
+.category-filters {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--foreground);
+    padding: 0.75rem 2rem;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    border-color: var(--foreground);
+}
+
+.category-btn.active {
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+}
+
+/* =====================================================
+   TUTORIAL PAGE
+   ===================================================== */
+.tutorial-hero {
+    min-height: 70vh;
+}
+
+.energy-section {
+    background: var(--foreground);
+    color: var(--background);
+    padding: 8rem 3rem;
+    text-align: center;
+}
+
+.tutorial-card {
+    display: grid;
+    gap: 4rem;
+    margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+    .tutorial-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.tutorial-video {
+    position: relative;
+    height: 550px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.tutorial-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 26, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.tutorial-video:hover .video-overlay {
+    background: rgba(26, 26, 26, 0.3);
+}
+
+.play-button {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+.difficulty-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+.tutorial-steps {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.tutorial-steps li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--foreground);
+    color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.step-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.duration {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+}
+
+/* =====================================================
+   MOBILE RESPONSIVE - PAGES
+   ===================================================== */
+@media (max-width: 767px) {
+    .shop-hero {
+        min-height: 50vh;
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .tutorial-video {
+        height: 400px;
+    }
+
+    .tutorial-card {
+        margin-bottom: 6rem;
+    }
+
+    .category-filters {
+        gap: 1rem;
+    }
+
+    .category-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.7rem;
+    }
+}
