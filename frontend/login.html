@@ -1,48 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>TrickIce Login</title>
+    <title>Login / Cadastro Trick Ice</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <main class="container">
-        <form action="index.html">
-            <h1>Login TrickIce</h1>
+    <div class="container">
+        <div class="form-box login">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
 
-            <div class="input-box">
-                <input placeholder="Usuário" type="email" required>
-                <i class="bx bxs-user"></i>
+        <div class="form-box register">
+            <form action="#">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome to TrickIce!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+                <img src="imagens/polar.webp" class="mascote-img" alt="Urso Polar">
             </div>
 
-            <div class="input-box">
-                <input placeholder="Senha" type="password" required>
-                <i class="bx bxs-lock-alt"></i>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back to TrickIce!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+                <img src="imagens/pinguim.gif" class="mascote-img" alt="Pinguim">
             </div>
+        </div>
+    </div>
 
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox">
-                    Lembrar a senha
-                </label>
-                <a href="#">Esqueci senha</a>
-            </div>
-
-            <button type="submit" class="login">
-                Login
-            </button>
-
-            <div class="register-link">
-                <p>Não tem uma conta? <a href="/cadastro.html">Cadastre-se</a></p>
-            </div>
-
-        </form>
-    </main>
-
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
