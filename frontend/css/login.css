@@ -28,16 +28,16 @@ body {
     overflow: hidden;
 }
 
-/* --- ESTILO DOS MASCOTES --- */
-/*esses bicho ai eu coloquei com ia, nao minto*/
-.mascote-img {
+/* ESTILO DOS MASCOTES */
+/* esses bicho ai eu coloquei com ia, nao minto */
+.imagem-mascote {
     width: 160px;
     margin-top: 25px;
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
     animation: flutuar 3s ease-in-out infinite;
 }
 
-/*chatoooooooooooooooo pra kct*/
+/*pra animar pra cima e pra baixo*/
 @keyframes flutuar {
 
     0%,
@@ -50,8 +50,8 @@ body {
     }
 }
 
-/* Painéis do negocio */
-.form-box {
+/* painéis do formulário */
+.caixa-formulario {
     position: absolute;
     right: 0;
     width: 50%;
@@ -68,15 +68,15 @@ body {
     transition: 0.6s ease-in-out 1.2s, visibility 0s 1s;
 }
 
-.container.active .form-box {
+.container.ativo .caixa-formulario {
     right: 50%;
 }
 
-.form-box.register {
+.caixa-formulario.registrar {
     visibility: hidden;
 }
 
-.container.active .form-box.register {
+.container.ativo .caixa-formulario.registrar {
     visibility: visible;
 }
 
@@ -92,13 +92,13 @@ form {
     margin-bottom: 10px;
 }
 
-.input-box {
+.caixa-entrada {
     position: relative;
     margin: 10px 0;
     width: 100%;
 }
 
-.input-box input {
+.caixa-entrada input {
     width: 100%;
     padding: 13px 50px 13px 20px;
     background: #eee;
@@ -108,7 +108,7 @@ form {
     font-size: 16px;
 }
 
-.input-box i {
+.caixa-entrada i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -134,13 +134,13 @@ form {
 }
 
 /* PAINEL AZUL ANIMADO */
-.toggle-box {
+.caixa-alternancia {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.toggle-box::before {
+.caixa-alternancia::before {
     content: '';
     position: absolute;
     left: -250%;
@@ -152,11 +152,11 @@ form {
     transition: 1.8s ease-in-out;
 }
 
-.container.active .toggle-box::before {
+.container.ativo .caixa-alternancia::before {
     left: 50%;
 }
 
-.toggle-panel {
+.painel-alternancia {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -171,27 +171,27 @@ form {
     transition: 0.5s ease-in-out;
 }
 
-.toggle-left {
+.alternancia-esquerda {
     left: 0;
     transition-delay: 1.2s;
 }
 
-.container.active .toggle-left {
+.container.ativo .alternancia-esquerda {
     left: -50%;
     transition-delay: 0.6s;
 }
 
-.toggle-right {
+.alternancia-direita {
     right: -50%;
     transition-delay: 0.6s;
 }
 
-.container.active .toggle-right {
+.container.ativo .alternancia-direita {
     right: 0;
     transition-delay: 1.2s;
 }
 
-.toggle-panel .btn {
+.painel-alternancia .btn {
     width: 160px;
     background: transparent;
     border: 2px solid #fff;
