@@ -11,60 +11,56 @@
 
 <body>
     <div class="container">
-        <div class="caixa-formulario login">
-            <form action="./index.html">
+        <div class="form-box login">
+            <form action="#">
                 <h1>Login</h1>
-                <div class="caixa-entrada">
-                    <input type="text" placeholder="Usuário" required>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
-                <div class="caixa-entrada">
-                    <input type="password" placeholder="Senha" required>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
                     <i class="fa-solid fa-lock"></i>
                 </div>
-                <div class="link-esquecido">
-                    <a href="#">Esqueceu a senha?</a>
+                <div class="forgot-link">
+                    <a href="#">Forgot Password?</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
             </form>
         </div>
 
-        <div class="caixa-formulario registrar">
-            <form action="./index.html">
-                <h1>Registrar</h1>
-                <div class="caixa-entrada">
-                    <input type="text" placeholder="Usuário" required>
+        <div class="form-box register">
+            <form action="#">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
-                <div class="caixa-entrada">
+                <div class="input-box">
                     <input type="email" placeholder="Email" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <div class="caixa-entrada">
-                    <input type="password" placeholder="Criar Senha" required>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
                     <i class="fa-solid fa-lock"></i>
                 </div>
-                <div class="caixa-entrada">
-                    <input type="password" placeholder="Confirmar Senha" required>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <button type="submit" class="btn">Registrar</button>
+                <button type="submit" class="btn">Register</button>
             </form>
         </div>
 
-        <div class="caixa-alternancia">
-            <div class="painel-alternancia alternancia-esquerda">
-                <h1>Bem-vindo ao TrickIce!</h1>
-                <p>Não tem uma conta?</p>
-                <button class="btn registrar-btn">Registrar</button>
-                <img src="imagens/polar.webp" class="imagem-mascote" alt="Urso Polar">
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome to TrickIce!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+                <img src="imagens/polar.webp" class="mascote-img" alt="Urso Polar">
             </div>
 
-            <div class="painel-alternancia alternancia-direita">
-                <h1>Bem-vindo de volta ao TrickIce!</h1>
-                <p>Já tem uma conta?</p>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back to TrickIce!</h1>
+                <p>Already have an account?</p>
                 <button class="btn login-btn">Login</button>
-                <img src="imagens/pinguim.gif" class="imagem-mascote" alt="Pinguim">
+                <img src="imagens/pinguim.gif" class="mascote-img" alt="Pinguim">
             </div>
         </div>
     </div>

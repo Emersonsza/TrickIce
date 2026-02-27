@@ -58,7 +58,7 @@ function initCarousel() {
         slidesToShow: 1,         // Mostra 1 slide por vez
         slidesToScroll: 1,       // Avança 1 slide por vez
         autoplay: true,          // Auto-play ativado
-        autoplaySpeed: 8000,     // 8 segundos por slide
+        autoplaySpeed: 5000,     // 5 segundos por slide
         arrows: true,            // Setas de navegação
         fade: true,              // Fade entre slides (não slide)
         cssEase: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)', // Easing suave
