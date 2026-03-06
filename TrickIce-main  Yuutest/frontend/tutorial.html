@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial - Trickice</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Trickice</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">LOJA</a></li>
+                <li><a href="tutorial.html">VER MAIS</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="tutorial.html">Learn</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 style="font-family: City_Planet;" class="hero-title">Tutoriais</h1>
+            <div class="tagline">
+                <p class="subtitle">Ensinando o estilo das ruas</p>
+                <p class="subtitle">com hype e estilo</p>
+            </div>
+            <script src="js/tutorial.js"></script>
+            <!--básico I intermediário I avançado -->
+            <section class="section">
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="Básico">Básico</button>
+                    <button class="category-btn" data-category="Intermediário">Intermediário</button>
+                    <button class="category-btn" data-category="avançado">avançado</button>
+                </div>
+            </section>
+
+            <!--videos do tutorial-->
+            <section class="tutorial-section">
+                <div class="tutorial-grid">
+                    <div class="tutorial-card" data-category="video do básico">
+                        <div class="video-container">
+                            <iframe src="https://youtu.be/CVlUdNmEgoc?si=OqmKV1TRu9noFWYjk" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Iniciante</span>
+                            <h3>Como mandar um Ollie</h3>
+                            <p>A base de todas as manobras no street.</p>
+                            <div class="card-footer">
+                                <span>⏱ 5 min</span>
+                                <a href="https://youtu.be/CVlUdNmEgoc?si=OqmKV1TRu9noFWYjk" class="btn-watch">Assistir
+                                    agora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-card" data-category="básico">
+                        <div class="video-container">
+                            <iframe src="https://youtu.be/yMs5sSWIa9c?si=zyPIq4GStOFMztqv" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Intermediário</span>
+                            <h3>Kickflip Dicas</h3>
+                            <p>Acerte o chute e o giro perfeito.</p>
+                            <div class="card-footer">
+                                <span>⏱ 8 min</span>
+                                <a href="https://youtu.be/yMs5sSWIa9c?si=zyPIq4GStOFMztqv" class="btn-watch">Assistir
+                                    agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Videos do tutorial -->
+            <section class="tutorial-section">
+                <div class="tutorial-grid">
+
+                    <!-- Card 1: Ollie (Básico) -->
+                    <div class="tutorial-card" data-category="Básico">
+                        <div class="video-container">
+                            <link rel="stylesheet" href="https://youtu.be/yMs5sSWIa9c?si=zyPIq4GStOFMztqv">
+                        </div>
+                        <!-- Card 1: Como subir e equilibrar no skate (Básico) -->
+                        <div class="card-info">
+                            <span class="badge">Iniciante</span>
+                            <h3>Como subir e equilibrar no skate</h3>
+                            <p>A base de todas as manobras no street.</p>
+                            <div class="card-footer">
+                                <span>⏱ 3:28 min</span>
+                                <a href="#" class="btn-watch">Assistir agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutorial-card" data-category="Básico">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Iniciante</span>
+                            <h3>Como mandar um Ollie</h3>
+                            <p>A base de todas as manobras no street.</p>
+                            <div class="card-footer">
+                                <span>⏱ 5 min</span>
+                                <a href="#" class="btn-watch">Assistir agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Kickflip (Intermediário) -->
+                    <div class="tutorial-card" data-category="Intermediário">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Intermediário</span>
+                            <h3>Kickflip Dicas</h3>
+                            <p>Acerte o chute e o giro perfeito.</p>
+                            <div class="card-footer">
+                                <span>⏱ 8 min</span>
+                                <a href="#" class="btn-watch">Assistir agora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Heelflip (Intermediário) -->
+                    <div class="tutorial-card" data-category="Intermediário">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Intermediário</span>
+                            <h3>Heelflip Tutorial</h3>
+                            <p>Aprenda a chutar com o calcanhar.</p>
+                            <div class="card-footer">
+                                <span>⏱ 6 min</span>
+                                <a href="#" class="btn-watch">Assistir agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card: 360 Flip (avançado) -->
+                    <div class="tutorial-card" data-category="avançado">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Avançado</span>
+                            <h3>360 Flip (Tre Flip)</h3>
+                            <p>O mestre dos flips. União de 360 pop shove-it com kickflip.</p>
+                            <div class="card-footer">
+                                <span>⏱ 12 min</span>
+                                <a href="#" class="btn-watch">Assistir agora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card: Hardflip (avançado) -->
+                    <div class="tutorial-card" data-category="avançado">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-info">
+                            <span class="badge">Avançado</span>
+                            <h3>Como mandar Hardflip</h3>
+                            <p>Uma das manobras mais técnicas e bonitas do street.</p>
+                            <div class="card-footer">
+                                <span>⏱ 10 min</span>
+                                <a href="#" class="btn-watch">Assistir agora</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+        </div>
+    </section>

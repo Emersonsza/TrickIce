@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pages.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navigation">
@@ -78,7 +80,7 @@
         // Load all products for shop page
         document.addEventListener('DOMContentLoaded', async () => {
             const grid = document.getElementById('shopProductGrid');
-            
+
             try {
                 const products = await API.getProducts();
                 renderProducts(products);
@@ -93,10 +95,10 @@
                 btn.addEventListener('click', async () => {
                     categoryButtons.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    
+
                     const category = btn.dataset.category;
                     try {
-                        const products = category === 'all' 
+                        const products = category === 'all'
                             ? await API.getProducts()
                             : await API.getProductsByCategory(category);
                         renderProducts(products);
@@ -127,4 +129,5 @@
         }
     </script>
 </body>
+
 </html>

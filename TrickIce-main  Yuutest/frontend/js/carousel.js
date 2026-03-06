@@ -5,7 +5,7 @@
 
 function initCarousel() {
     const carouselContainer = document.getElementById('featuredCarousel');
-    
+
     // Se não encontrar o container, sai da função
     if (!carouselContainer) return;
 
@@ -64,7 +64,7 @@ function initCarousel() {
         cssEase: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)', // Easing suave
         pauseOnHover: true,      // Pausa quando mouse está em cima
         lazyLoad: 'progressive', // Carrega imagens progressivamente
-        
+
         // Setas customizadas com SVG
         prevArrow: '<button type="button" class="slick-prev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polyline points="15 18 9 12 15 6"></polyline></svg></button>',
         nextArrow: '<button type="button" class="slick-next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polyline points="9 18 15 12 9 6"></polyline></svg></button>'

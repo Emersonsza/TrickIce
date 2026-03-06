@@ -53,121 +53,98 @@
 /* =====================================================
    TUTORIAL PAGE
    ===================================================== */
-.tutorial-hero {
-    min-height: 70vh;
-}
-
-.energy-section {
-    background: var(--foreground);
-    color: var(--background);
-    padding: 8rem 3rem;
-    text-align: center;
-}
-
-.tutorial-card {
-    display: grid;
-    gap: 4rem;
-    margin-bottom: 10rem;
-}
-
-@media (min-width: 768px) {
-    .tutorial-card {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.tutorial-video {
-    position: relative;
-    height: 550px;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.tutorial-video img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(26, 26, 26, 0.5);
+.category-filters {
     display: flex;
-    align-items: center;
+    gap: 1.5rem;
     justify-content: center;
-    transition: background 0.3s ease;
+    flex-wrap: wrap;
 }
 
-.tutorial-video:hover .video-overlay {
-    background: rgba(26, 26, 26, 0.3);
-}
-
-.play-button {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.play-button:hover {
-    transform: scale(1.1);
-}
-
-.difficulty-badge {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background: var(--accent);
-    padding: 0.5rem 1rem;
+.category-btn {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--foreground);
+    padding: 0.75rem 2rem;
     border-radius: 2px;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.tutorial-steps {
-    list-style: none;
-    margin: 2rem 0;
+.category-btn:hover {
+    border-color: var(--foreground);
 }
 
-.tutorial-steps li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    align-items: flex-start;
-}
-
-.step-number {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+.category-btn.active {
     background: var(--foreground);
     color: var(--background);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-weight: 600;
+    border-color: var(--foreground);
 }
 
-.step-text {
-    font-size: 1.125rem;
-    line-height: 1.8;
+
+   .tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
 }
 
-.duration {
-    font-size: 1rem;
+.tutorial-card {
+    background: #1a1a1a; /* Fundo escuro pro estilo street */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+    margin: 10px;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff0050; /* Cor de destaque (ex: estilo TikTok/Street) */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    padding: 1.5rem;
+    color: white;
+}
+
+.badge {
+    background: #ff0050;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--muted-foreground);
-    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.card-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.btn-watch {
+    color: #ff0050;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* =====================================================
