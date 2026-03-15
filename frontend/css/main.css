@@ -1,11 +1,3 @@
-/* =====================================================
-   TRICKICE - MAIN CSS
-   Base styles, layout, and components
-   ===================================================== */
-f
-/* =====================================================
-   RESET & BASE
-   ===================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -210,7 +202,9 @@ body {
     letter-spacing: 0.2em;
     text-decoration: none;
     color: var(--foreground);
-    margin-bottom: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
     transition: color 0.3s ease;
 }
 
@@ -218,9 +212,6 @@ body {
     color: var(--secondary);
 }
 
-/* =====================================================
-   LAYOUT
-   ===================================================== */
 .section {
     padding: 8rem 3rem;
     max-width: 1600px;
@@ -442,9 +433,7 @@ body {
     color:white;
 }
 
-/* =====================================================
-   BRAND SECTION
-   ===================================================== */
+/* BRAND SECTION */
 .brand-image {
     height: 600px;
     overflow: hidden;
@@ -462,9 +451,7 @@ body {
     transform: scale(1.05);
 }
 
-/* =====================================================
-   PRODUCT CARD
-   ===================================================== */
+/* PRODUCT CARD */
 .product-card {
     position: relative;
     overflow: hidden;
@@ -519,31 +506,7 @@ body {
     color: var(--muted-foreground);
 }
 
-/* =====================================================
-   TUTORIAL SECTION
-   ===================================================== */
-.tutorial-image {
-    height: 600px;
-    overflow: hidden;
-    border-radius: 2px;
-    position: relative;
-}
-
-.tutorial-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tutorial-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(26, 26, 26, 0.3) 0%, transparent 50%);
-}
-
-/* =====================================================
-   FOOTER
-   ===================================================== */
+/* FOOTER */
 .footer {
     display: flex;
     justify-content: space-between;

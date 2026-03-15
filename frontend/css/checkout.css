@@ -1,0 +1,495 @@
+/* =====================================================
+   TRICKICE - CHECKOUT CSS
+   Design limpo estilo old school (Vans, Supreme, etc)
+   ===================================================== */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f8f8;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --border-color: #e0e0e0;
+    --accent-color: #1a1a1a;
+    --success-color: #22c55e;
+    --error-color: #ef4444;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+.checkout-header {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.secure-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.secure-badge ion-icon {
+    font-size: 1.25rem;
+    color: var(--success-color);
+}
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+.checkout-main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: var(--text-primary);
+}
+
+.breadcrumb ion-icon {
+    font-size: 0.75rem;
+}
+
+/* GRID */
+.checkout-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+    .checkout-grid {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+/* =====================================================
+   FORMULÁRIO
+   ===================================================== */
+.checkout-form-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.checkout-form-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.form-section {
+    margin-bottom: 2.5rem;
+}
+
+.form-section h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 0.9375rem;
+    border: 1.5px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+    color: var(--text-primary);
+    transition: all 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.05);
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Input com ícone */
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon ion-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+/* Form Row (2 colunas) */
+.form-row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =====================================================
+   ORDER SUMMARY
+   ===================================================== */
+.order-summary-section {
+    height: fit-content;
+}
+
+.order-summary-sticky {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 100px;
+}
+
+.order-summary-sticky h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* PRODUTO */
+.order-product {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.product-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.product-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Quantity */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.quantity-control label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.qty-btns {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.25rem;
+}
+
+.qty-btns button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    transition: background 0.2s;
+}
+
+.qty-btns button:hover {
+    background: var(--bg-secondary);
+}
+
+.qty-btns span {
+    padding: 0 0.75rem;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* TOTALS */
+.order-totals {
+    margin-bottom: 1.5rem;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 0.9375rem;
+}
+
+.total-row span:first-child {
+    color: var(--text-secondary);
+}
+
+.total-row span:last-child {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.total-final {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--border-color);
+    font-size: 1.125rem;
+}
+
+.total-final span {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* SECURITY BADGES */
+.security-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.security-badges .badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+}
+
+.security-badges .badge ion-icon {
+    font-size: 1.125rem;
+    color: var(--success-color);
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.checkout-footer {
+    background: white;
+    border-top: 1px solid var(--border-color);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.checkout-footer p {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}
+
+/* =====================================================
+   RESPONSIVO MOBILE
+   ===================================================== */
+@media (max-width: 1023px) {
+    .checkout-form-section,
+    .order-summary-sticky {
+        padding: 1.5rem;
+    }
+    
+    .checkout-container {
+        padding: 0 1rem;
+    }
+    
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Order summary vem primeiro no mobile */
+    .order-summary-section {
+        order: -1;
+    }
+    
+    .order-summary-sticky {
+        position: static;
+    }
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-container {
+        padding: 0 1rem;
+    }
+    
+    .secure-badge span {
+        display: none;
+    }
+}
