@@ -3,6 +3,8 @@ const products = [
     { id: "monochromatic-kit", category: "Shapes", price: 319.99, name: "Kit Shapes Monocromático", image: "imagens/doubledecks.webp" },
     { id: "deck-nose", category: "Shapes", price: 114.99, name: "Shape Nose", image: "imagens/nosedeck.jpg" },
     { id: "deck-pinky", category: "Shapes", price: 134.99, name: "Shape Pinky", image: "imagens/blackpinkdeck.webp" },
+    { id: "deck-nose", category: "Shapes", price: 119.99, name: "Shape TRICKICE Marfim Give Me dollar", image: "imagens/Shape TRICKICE Marfim Give Me dollar.webp" },
+    { id: "deck-pinky", category: "Shapes", price: 134.99, name: "Shape TRICKICE Marfim Susto", image: "imagens/Shape TRICKICE Marfim Susto.webp" },
 
     { id: "urban-track-hoodie", category: "streetwear", price: 80.00, name: "Moletom Urban Track", image: "imagens/monoHood.png" },
     { id: "pitbull-hoodie", category: "streetwear", price: 80.00, name: "Moletom Pitbull R&B", image: "imagens/rednblackhood.png" },
@@ -13,11 +15,17 @@ const products = [
     { id: "violet-sneakers", category: "footwear", price: 79.99, name: "Tênis Violet-Street", image: "imagens/purplefoot.jpg" },
     { id: "orange-sneakers", category: "footwear", price: 84.99, name: "Tênis Orangetone", image: "imagens/orangefoot.jpg" },
     { id: "checkered-sneakers", category: "footwear", price: 69.99, name: "Tênis Quadriculado", image: "imagens/checkfoot.jpg" },
+    { id: "orange-sneakers", category: "footwear", price: 459.99, name: "Tenis Qix Plaza Preto", image: "imagens/Tenis Qix Plaza Preto.webp" },
+    { id: "checkered-sneakers", category: "footwear", price: 459.90, name: "Tenis Qix Chorão Preto", image: "imagens/Tenis Qix Chorão Allan Mesquita Preto.webp" },
 
-    { id: "deck-shadow", category: "Skateboard", price: 119.99, name: "Shape Shadow", image: "imagens/skate montado/skate-montado-primitive-peace-rodriguez-07bd60fa0737d4573517701450673126-480-0.webp" },
-    { id: "monochromatic-kit", category: "Skateboard", price: 319.99, name: "Kit Shapes Monocromático", image: "imagens/doubledecks.webp" },
-    { id: "deck-nose", category: "Skateboard", price: 114.99, name: "Shape Nose", image: "imagens/nosedeck.jpg" },
-    { id: "deck-pinky", category: "Skateboard", price: 134.99, name: "Shape Pinky", image: "imagens/blackpinkdeck.webp" },
+    { id: "deck-shadow", category: "skateboard", price: 319.99, name: "Shape Shadow", image: "imagens/skate montado/skate-montado-primitive-peace-rodriguez-07bd60fa0737d4573517701450673126-480-0.webp" },
+    { id: "monochromatic-kit", category: "skateboard", price: 319.99, name: "Skate Foundation Ryan Surf", image: "imagens/skate montado/SkateMontadoFoundationRyan.webp" },
+    { id: "deck-nose", category: "skateboard", price: 319.99, name: "Skate Montado Primitive Tree Leaf", image: "imagens/skate montado/Skate Montado Primitive Tree Leaf.webp" },
+    { id: "deck-pinky", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Bennett", image: "imagens/skate montado/Skate Montado Toy Machine Bennett.webp" },
+    { id: "deck-pinky", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Blake Carpenter", image: "imagens/skate montado/Skate Montado Toy Machine Blake Carpenter.webp" },
+    { id: "deck-pinky", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Jeremy Lepbres", image: "imagens/skate montado/Skate Montado Toy Machine Jeremy Lepbres.webp" },
+
+
 ];
 
 let currentCategory = "all";
