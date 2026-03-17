@@ -232,12 +232,6 @@ body {
     gap: 3rem;
 }
 
-.tutorial-image img {
-    width: 80%;
-    height: 650px;
-    object-fit: cover;
-}
-
 @media (min-width: 768px) {
     .grid-2 {
         grid-template-columns: repeat(2, 1fr);
