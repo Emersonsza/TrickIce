@@ -17,20 +17,6 @@ body {
     background: linear-gradient(90deg, #000000, #525253);
 }
 
-.forgot-link a {
-    color: #000000; /* Use a cor que desejar aqui */
-    text-decoration: none; /* Remove o sublinhado se quiser */
-    font-size: 14px;
-    margin: 10px 0;
-    transition: 0.3s;
-}
-
-/* Opcional: mudar a cor quando passar o mouse */
-.forgot-link a:hover {
-    color: #0077ff; 
-    text-decoration: underline;
-}
-
 .container {
     position: relative;
     width: 850px;

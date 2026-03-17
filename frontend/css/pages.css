@@ -53,10 +53,6 @@
     justify-content: center;
 }
 
-.section {
-    padding: 15px;
-}
-
 .category-filters {
     display: flex;
     gap: 1.5rem;
@@ -691,63 +687,4 @@
     .cart-footer {
         padding: 1rem;
     }
-}
-
-/* SIDEBAR FILTROS */
-.sidebar-skate {
-    width: 250px;
-    padding: 20px;
-}
-
-/* LISTA */
-.js-accordion-container {
-    padding: 0;
-    margin: 0;
-}
-
-/* ITENS */
-.js-accordion-container li {
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-/* LINKS DOS FILTROS */
-.btn-link {
-    text-decoration: none;
-    color: #111;
-    font-size: 14px;
-    font-weight: 500;
-    display: block;
-    padding: 4px 0;
-    transition: all 0.25s ease;
-}
-
-/* HOVER IGUAL LOJA */
-.btn-link:hover {
-    color: #89cff0;
-    transform: translateX(4px);
-}
-
-/* BOTÃO VER MAIS */
-.js-accordion-toggle {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 6px 12px;
-    font-size: 12px;
-    border: 1px solid #89cff0;
-    border-radius: 4px;
-    color: #000000;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-/* HOVER BOTÃO */
-.js-accordion-toggle:hover {
-    background: #89cff0;
-    color: white;
-}
-
-/* CONTEUDO ESCONDIDO */
-.js-accordion-content {
-    display: none;
 }
