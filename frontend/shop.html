@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Trickice</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/cart-styles.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navigation">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Trickice</a>
+
+        <div class="search-container">
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar produtos...">
+        </div>
+
+        <div class="cart-icon-wrapper" id="cartIconWrapper">
+            <ion-icon name="cart-outline" class="cart-icon" id="cartIcon"></ion-icon>
+            <span class="cart-badge" id="cartBadge">0</span>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Início</a>
+    <a href="shop.html">Loja</a>
+    <a href="tutorial.html">Aprender</a>
+</div>
+
+<!-- HERO -->
+<section class="shop-hero">
+    <div class="hero-content">
+        <a href="index.html" class="back-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Voltar
+        </a>
+    </div>
+</section>
+
+<!-- FILTRO SUPERIOR -->
+<section class="section">
+    <div class="category-filters">
+        <button class="category-btn active" data-category="all">Todos</button>
+        <button class="category-btn" data-category="skateboard">Skates</button>
+        <button class="category-btn" data-category="streetwear">Streetwear</button>
+        <button class="category-btn" data-category="footwear">Calçados</button>
+    </div>
+</section>
+
+<!-- PRODUTOS + SIDEBAR -->
+<section class="section" id="products">
+
+    <div style="display: flex; gap: 40px; align-items: flex-start;">
+
+        <!-- SIDEBAR (AGORA CONTROLADA PELO JS) -->
+        <div class="sidebar-skate" id="skateSidebar">
+
+            <ul class="js-accordion-container list-unstyled">
+                <li><a href="#" class="btn-link">Skate Montado</a></li>
+                <li><a href="#" class="btn-link">Shape</a></li>
+                <li><a href="#" class="btn-link">Trucks</a></li>
+                <li><a href="#" class="btn-link">Parafusos</a></li>
+                <li><a href="#" class="btn-link">Rodas</a></li>
+            </ul>
+
+            <!-- PARTE QUE ABRE -->
+            <div class="js-accordion-content">
+                <ul class="list-unstyled">
+                    <li><a href="#" class="btn-link">Rolamento</a></li>
+                    <li><a href="#" class="btn-link">Lixa</a></li>
+                    <li><a href="#" class="btn-link">Acessórios Skate</a></li>
+                </ul>
+            </div>
+
+            <!-- BOTÃO -->
+            <a href="#" class="js-accordion-toggle">VER MAIS</a>
+
+        </div>
+
+        <!-- GRID PRODUTOS -->
+        <div style="flex: 1;">
+            <div class="grid-3" id="shopProductGrid"></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CARRINHO -->
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <h3>Seu Carrinho</h3>
+        <button class="cart-close" id="cartClose">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total:</span>
+            <span class="cart-total-price" id="cartTotalPrice">R$ 0,00</span>
+        </div>
+        <button class="cart-checkout-btn" id="cartCheckoutBtn">
+            <span>Finalizar Agora</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </button>
+    </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p class="footer-copyright">© 2026 Trickice. Underground desde o primeiro dia.</p>
+    <div class="footer-logo">Trickice</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+
+</body>
+</html>
