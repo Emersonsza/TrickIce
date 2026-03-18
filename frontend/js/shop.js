@@ -3,8 +3,8 @@ const products = [
     { id: "monochromatic-kit", category: "Shapes", price: 319.99, name: "Kit Shapes Monocromático", image: "imagens/doubledecks.webp" },
     { id: "deck-nose", category: "Shapes", price: 114.99, name: "Shape Nose", image: "imagens/nosedeck.jpg" },
     { id: "deck-pinky", category: "Shapes", price: 134.99, name: "Shape Pinky", image: "imagens/blackpinkdeck.webp" },
-    { id: "marfim", category: "Shapes", price: 119.99, name: "Shape TRICKICE Marfim Give Me dollar", image: "imagens/Shape TRICKICE Marfim Give Me dollar.webp" },
-    { id: "marfim", category: "Shapes", price: 134.99, name: "Shape TRICKICE Marfim Susto", image: "imagens/Shape TRICKICE Marfim Susto.webp" },
+    { id: "marfim give me", category: "Shapes", price: 119.99, name: "Shape TRICKICE Marfim Give Me dollar", image: "imagens/Shape TRICKICE Marfim Give Me dollar.webp" },
+    { id: "marfim susto", category: "Shapes", price: 134.99, name: "Shape TRICKICE Marfim Susto", image: "imagens/Shape TRICKICE Marfim Susto.webp" },
 
     { id: "urban-track-hoodie", category: "streetwear", price: 180.00, name: "Moletom Urban Track", image: "imagens/monoHood.png" },
     { id: "pitbull-hoodie", category: "streetwear", price: 180.00, name: "Moletom Pitbull R&B", image: "imagens/rednblackhood.png" },
@@ -17,40 +17,41 @@ const products = [
     { id: "violet-sneakers", category: "footwear", price: 79.99, name: "Tênis Violet-Street", image: "imagens/purplefoot.jpg" },
     { id: "orange-sneakers", category: "footwear", price: 84.99, name: "Tênis Orangetone", image: "imagens/orangefoot.jpg" },
     { id: "checkered-sneakers", category: "footwear", price: 69.99, name: "Tênis Quadriculado", image: "imagens/checkfoot.jpg" },
-    { id: "qix", category: "footwear", price: 459.99, name: "Tenis Qix Plaza Preto", image: "imagens/Tenis Qix Plaza Preto.webp" },
-    { id: "qix", category: "footwear", price: 459.90, name: "Tenis Qix Chorão Preto", image: "imagens/Tenis Qix Chorão Allan Mesquita Preto.webp" },
+    { id: "qix plaza", category: "footwear", price: 459.99, name: "Tenis Qix Plaza Preto", image: "imagens/Tenis Qix Plaza Preto.webp" },
+    { id: "qix chorão", category: "footwear", price: 459.90, name: "Tenis Qix Chorão Preto", image: "imagens/Tenis Qix Chorão Allan Mesquita Preto.webp" },
 
-    { id: "deck-shadow", category: "skateboard", price: 319.99, name: "Shape Shadow", image: "imagens/skate montado/skate-montado-primitive-peace-rodriguez-07bd60fa0737d4573517701450673126-480-0.webp" },
-    { id: "monochromatic-kit", category: "skateboard", price: 319.99, name: "Skate Foundation Ryan Surf", image: "imagens/skate montado/SkateMontadoFoundationRyan.webp" },
-    { id: "deck-nose", category: "skateboard", price: 319.99, name: "Skate Montado Primitive Tree Leaf", image: "imagens/skate montado/Skate Montado Primitive Tree Leaf.webp" },
-    { id: "toy", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Bennett", image: "imagens/skate montado/Skate Montado Toy Machine Bennett.webp" },
-    { id: "toy", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Blake Carpenter", image: "imagens/skate montado/Skate Montado Toy Machine Blake Carpenter.webp" },
-    { id: "toy", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Jeremy Lepbres", image: "imagens/skate montado/Skate Montado Toy Machine Jeremy Lepbres.webp" },
+    { id: "shadow", category: "skateboard", price: 319.99, name: "Shape Shadow", image: "imagens/skate montado/skate-montado-primitive-peace-rodriguez-07bd60fa0737d4573517701450673126-480-0.webp" },
+    { id: "ryan", category: "skateboard", price: 319.99, name: "Skate Foundation Ryan Surf", image: "imagens/skate montado/SkateMontadoFoundationRyan.webp" },
+    { id: "primiitve", category: "skateboard", price: 319.99, name: "Skate Montado Primitive Tree Leaf", image: "imagens/skate montado/Skate Montado Primitive Tree Leaf.webp" },
+    { id: "toy bennet", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Bennett", image: "imagens/skate montado/Skate Montado Toy Machine Bennett.webp" },
+    { id: "toy blake", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Blake Carpenter", image: "imagens/skate montado/Skate Montado Toy Machine Blake Carpenter.webp" },
+    { id: "toy jeremy", category: "skateboard", price: 319.99, name: "Skate Montado Toy Machine Jeremy Lepbres", image: "imagens/skate montado/Skate Montado Toy Machine Jeremy Lepbres.webp" },
 
-    { id: "forged", category: "Trucks", price: 650.90, name: "Truck Independent Stage 11 Forged", image: "imagens/Truck Independent Stage 11 Polished Standart.webp" },
-    { id: "forged", category: "Trucks", price: 799.99, name: "Truck Independent Stage 11 Forged", image: "imagens/Truck Independent Stage 11 Forged Hollow Silver.webp" },
-    { id: "hollow", category: "Trucks", price: 399.99, name: "Truck Silver M Hollow Blk", image: "imagens/Truck Silver M Hollow Blk 129mm.webp" },
-    { id: "hollow", category: "Trucks", price: 269.99, name: "Truck Intruder Hollow Pro Serie II High White", image: "imagens/Truck Intruder Hollow Pro Serie II High White.webp" },
-    { id: "hollow", category: "Trucks", price: 399.99, name: "Truck Silver M-Hollow Blue", image: "imagens/Truck Silver M-Hollow Blue.webp" },
-    { id: "hollow", category: "Trucks", price: 269.99, name: "Truck Intruder Hollow Pro Serie II Mid", image: "imagens/Truck Intruder Hollow Pro Serie II Mid 139mm Gold.webp" },
+    { id: "forged stg 11", category: "Trucks", price: 650.90, name: "Truck Independent Stage 11 Forged", image: "imagens/Truck Independent Stage 11 Polished Standart.webp" },
+    { id: "forged 11", category: "Trucks", price: 799.99, name: "Truck Independent Stage 11 Forged", image: "imagens/Truck Independent Stage 11 Forged Hollow Silver.webp" },
+    { id: "hollow blk", category: "Trucks", price: 399.99, name: "Truck Silver M Hollow Blk", image: "imagens/Truck Silver M Hollow Blk 129mm.webp" },
+    { id: "hollow pro white", category: "Trucks", price: 269.99, name: "Truck Intruder Hollow Pro Serie II High White", image: "imagens/Truck Intruder Hollow Pro Serie II High White.webp" },
+    { id: "hollow blue", category: "Trucks", price: 399.99, name: "Truck Silver M-Hollow Blue", image: "imagens/Truck Silver M-Hollow Blue.webp" },
+    { id: "hollow pro", category: "Trucks", price: 269.99, name: "Truck Intruder Hollow Pro Serie II Mid", image: "imagens/Truck Intruder Hollow Pro Serie II Mid 139mm Gold.webp" },
 
-    { id: "tomato", category: "Parafusos", price: 23.99, name: "Parafuso de Base Tomato Purple Haze", image: "imagens/Parafuso de Base Tomato Purple Haze.webp" },
-    { id: "tomato", category: "Parafusos", price: 23.99, name: "Parafuso de Base Tomato Blue Sky", image: "imagens/Parafuso de Base Tomato Blue Sky.webp" },
-    { id: "black", category: "Parafusos", price: 28.90, name: "Parafuso Central Cravo Vazado - Black Sheep Prata", image: "imagens/Parafuso Central Cravo Vazado - Black Sheep Prata.webp" },
-    { id: "black", category: "Parafusos", price: 9.90, name: "Porcas Truck Skate 13 Black Sheep Prata", image: "imagens/Porcas Truck Skate 13 Black Sheep Prata.webp" },
-    { id: "black", category: "Parafusos", price: 8.90, name: "Porcas Parafuso Central 14 Black Sheep Preta", image: "imagens/Porcas Parafuso Central 14 Black Sheep Preta.webp" },
+    { id: "tomato purple", category: "Parafusos", price: 23.99, name: "Parafuso de Base Tomato Purple Haze", image: "imagens/Parafuso de Base Tomato Purple Haze.webp" },
+    { id: "tomato blue", category: "Parafusos", price: 23.99, name: "Parafuso de Base Tomato Blue Sky", image: "imagens/Parafuso de Base Tomato Blue Sky.webp" },
+    { id: "black vzd prata", category: "Parafusos", price: 28.90, name: "Parafuso Central Cravo Vazado - Black Sheep Prata", image: "imagens/Parafuso Central Cravo Vazado - Black Sheep Prata.webp" },
+    { id: "black prata", category: "Parafusos", price: 9.90, name: "Porcas Truck Skate 13 Black Sheep Prata", image: "imagens/Porcas Truck Skate 13 Black Sheep Prata.webp" },
+    { id: "black preta", category: "Parafusos", price: 8.90, name: "Porcas Parafuso Central 14 Black Sheep Preta", image: "imagens/Porcas Parafuso Central 14 Black Sheep Preta.webp" },
     { id: "tomato", category: "Parafusos", price: 7.90, name: "Porcas 13 Truck skate Tomato", image: "imagens/Porcas 13 Truck skate Tomato.webp" },
 
     { id: "spitfire", category: "Rodas", price: 649.99, name: "Roda Spitfire X Supreme Classic 53mm Black", image: "imagens/Roda Spitfire X Supreme Classic 53mm Black.webp" },
-    { id: "spitfire", category: "Rodas", price: 499.90, name: "Roda Spitfire F4 Dyson Sci-fi Black conica 54mm", image: "imagens/Roda Spitfire F4 Dyson Sci-fi Black conica 54mm.webp" },
+    { id: "spitfire dyson", category: "Rodas", price: 499.90, name: "Roda Spitfire F4 Dyson Sci-fi Black conica 54mm", image: "imagens/Roda Spitfire F4 Dyson Sci-fi Black conica 54mm.webp" },
     { id: "mentex", category: "Rodas", price: 199.90, name: "Roda Mentex Sweet Longboard 70mm", image: "imagens/Roda Mentex Sweet Longboard 70mm.webp" },
     { id: "x", category: "Rodas", price: 459.99, name: "Rodas Bones X-Formula Smoking Snakle 55mm Sidecut 99a", image: "imagens/Rodas Bones X-Formula Smoking Snakle 55mm Sidecut 99a.webp" },
-    { id: "spitfire", category: "Rodas", price: 499.99, name: "Roda Spitfire Formula 4 99a Andrew Wilson 56mm", image: "imagens/Roda Spitfire Formula 4 99a Andrew Wilson 56mm.webp" },
+    { id: "spitfire f4", category: "Rodas", price: 499.99, name: "Roda Spitfire Formula 4 99a Andrew Wilson 56mm", image: "imagens/Roda Spitfire Formula 4 99a Andrew Wilson 56mm.webp" },
     { id: "dgk", category: "Rodas", price: 269.99, name: "Roda Dgk Sunshine 53mm 101a", image: "imagens/Roda Dgk Sunshine 53mm 101a.webp" },
 
 ];
 
 let currentCategory = "all";
+let currentSkateFilter = "all";
 
 /* =========================
    CONTROLE DA SIDEBAR SKATE
@@ -316,10 +317,25 @@ function applyFilters() {
     const term = document.getElementById("searchInput").value.toLowerCase();
     let filtered = products;
 
-    if (currentCategory !== "all") {
+    // 👉 CATEGORIA PRINCIPAL
+    if (currentCategory === "skateboard") {
+
+        // mostra TODOS itens de skate (grupo completo)
+        filtered = filtered.filter(p =>
+            ["skateboard", "Shapes", "Trucks", "Parafusos", "Rodas"].includes(p.category)
+        );
+
+        // 👉 SUBFILTRO (sidebar)
+        if (currentSkateFilter !== "all") {
+            filtered = filtered.filter(p => p.category === currentSkateFilter);
+        }
+
+    } else if (currentCategory !== "all") {
+        // outras categorias normais
         filtered = filtered.filter(p => p.category === currentCategory);
     }
 
+    // 👉 BUSCA
     if (term !== "") {
         filtered = filtered.filter(p =>
             p.name.toLowerCase().includes(term) ||
@@ -329,10 +345,23 @@ function applyFilters() {
 
     renderProducts(filtered);
 
-    // 👉 garante mostrar/esconder corretamente
+    // controla sidebar
     toggleSidebar();
 }
 
+// Filtros Sidebar (sempre visível)
+document.querySelectorAll('#skateSidebar .btn-link').forEach(btn => {
+    btn.addEventListener('click', () => {
+
+        // 👉 agora usa filtro interno, NÃO muda categoria principal
+        currentSkateFilter = btn.dataset.category;
+
+        applyFilters();
+
+        document.querySelectorAll('#skateSidebar .btn-link').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    });
+});
 /* =========================
    INICIALIZAÇÃO
 ========================= */

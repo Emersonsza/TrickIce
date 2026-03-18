@@ -751,3 +751,60 @@
 .js-accordion-content {
     display: none;
 }
+
+/* ==============================
+   Sidebar Skate - sempre visível
+============================== */
+.sidebar-skate {
+    width: 200px;
+    padding: 20px;
+    flex-shrink: 0;
+    display: none; /* inicialmente escondido */
+}
+/* Lista da sidebar */
+.js-accordion-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Itens da lista */
+.js-accordion-container li {
+    margin-bottom: 12px;
+}
+
+/* Botões da sidebar - aparência de botão */
+.btn-link {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    background-color: #f5f5f5;
+    border: 1.5px solid transparent;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+/* Hover do botão */
+.btn-link:hover {
+    background-color: #89cff0;
+    color: white;
+    border-color: #89cff0;
+    transform: translateX(4px);
+}
+
+/* Botão ativo */
+.btn-link.active {
+    background-color: #2a82f7;
+    color: white;
+    border-color: #2a82f7;
+    cursor: default;
+    transform: none;
+    pointer-events: none;
+}
