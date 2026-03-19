@@ -44,6 +44,42 @@
     gap: 2rem;
 }
 
+/* CARD DO PRODUTO */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* CONTEÚDO DO CARD */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* NOME DO PRODUTO */
+.product-title {
+    min-height: 48px; 
+}
+
+/* PREÇO */
+.product-price {
+    margin-bottom: 10px;
+}
+
+/* CONTAINER DOS BOTÕES */
+.product-actions {
+    margin-top: auto; 
+    display: flex;
+    gap: 10px;
+}
+
+/* BOTÕES */
+.product-actions button {
+    flex: 1;
+}
+
 /* shop hero */
 
 .shop-hero {
