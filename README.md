@@ -10,5 +10,4 @@ Projeto multidisciplinar desenvolvido para a turma 3DM, focado em resolver a esc
 
 ## Proposta do Projeto
 O Trick Ice é uma plataforma criada para skatistas (iniciantes e avançados) que buscam:
-1. Encontrar e comprar peças de skate de forma rápida e segura.
-2. Assistir a tutoriais práticos e dinâmicos para aprender e evoluir em novas manobras.
+Encontrar e comprar peças de skate de forma rápida e segura.
